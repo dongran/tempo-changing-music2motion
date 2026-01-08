@@ -12,7 +12,7 @@
 20210912-koryu-1_Mstr
 20210912-koryu-2_Mstr
 20210912-ryuugyoku-3_Appr
-20210912-ryuugyoku-4-left_Appr
+20210912-ryuugyoku-4left_Appr
 20210912-koryu-4right_Mstr
 20210912-ryuugyoku-5left_Appr
 20210912-koryu-5right_Mstr
