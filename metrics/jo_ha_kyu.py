@@ -166,4 +166,3 @@ def compute_jo_ha_kyu_from_bvh_and_audio(
         motion_speed=speed_aligned,
     )
 
-

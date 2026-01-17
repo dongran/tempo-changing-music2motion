@@ -230,6 +230,22 @@ For detailed mathematical definitions and interpretation, please refer to:
 
 Example script: `metrics/examples/run_metrics_example.py` demonstrates end‑to‑end usage on one JoruriPuppet sequence.
 
+### Multi-sequence Jo–Ha–Kyu averaging (template only)
+
+The paper reports an averaged Jo–Ha–Kyu score across multiple sequences using **Fisher’s z-transform** and also reports a **95% confidence interval**.
+This repository keeps the runnable examples focused on a single sequence, but `metrics/jo_ha_kyu.py` also includes the corresponding utility functions:
+
+- `fishers_z_transform(r_values, confidence_level=0.95)`
+- `compute_jo_ha_kyu_avg(results, confidence_level=0.95)`
+
+If you have multiple sequences locally, the typical workflow is:
+
+- compute one `JoHaKyuResult` per sequence using `compute_jo_ha_kyu_from_bvh_and_audio(...)`,
+- collect the `r` values (or pass the list of results),
+- apply Fisher z averaging to obtain `r_avg` and the 95% CI.
+
+See `metrics/examples/jo_ha_kyu_avg_example.py` for a minimal template script (requires you to provide your own multi-sequence file list).
+
 ---
 
 ## Tempo‑changing music features (global and frame‑aligned)
